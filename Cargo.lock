@@ -213,6 +213,13 @@ name = "news_app"
 version = "0.1.0"
 dependencies = [
  "colour",
+ "newsapi",
+]
+
+[[package]]
+name = "newsapi"
+version = "0.1.0"
+dependencies = [
  "serde",
  "serde_json",
  "ureq",

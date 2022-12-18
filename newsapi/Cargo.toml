@@ -1,12 +1,11 @@
 [package]
-name = "news_app"
+name = "newsapi"
 version = "0.1.0"
 edition = "2021"
 
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
 [dependencies]
-colour = "0.6.0"
-
-
-newsapi = {path="./newsapi"}
+ureq = "2.5.0"
+serde = {version ="1.0.151",features = ["derive"]} 
+serde_json = "1.0.91"
