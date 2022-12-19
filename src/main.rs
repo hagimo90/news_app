@@ -22,7 +22,7 @@ async fn main() -> Result<(),Box<dyn Error>> {
 
     let mut newsapi = NewsApi::new(&api_key);
     newsapi.endpoint(Endpoint::TopHeadlines).country(Country::Us);
-    let news_api_response = newsapi.fetch_async().await?;
+    let news_api_response = newsapi.fetch()?;
     render_articles(&news_api_response.articles());
  
 
